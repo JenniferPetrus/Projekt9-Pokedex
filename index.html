@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon-footer.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="data.js"></script>
+    <script src="templateHTML.js"></script>
+</head>
+<body onload="init()">
+    <header class="header">
+        <div class="header-logo">
+            <img src="./img/International_Pokémon_logo.svg.png" alt="">
+        </div>
+        <div class="header-search">
+            <input id="searchText" type="text" placeholder="Finde deinen Pokemon!">
+        </div>
+    </header>
+    <section id="content" class="content">
+        <div id="details" class="pokemon-details" style="display: none;">
+        </div>
+    </section>
+    <button id="loadMoreBtn" class="load-more-btn" onclick="loadMore()">Mehr Laden</button>
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalDetails">
+            </div>
+        </div>
+    </div>
+    <div id="loadingScreen">
+        <img src="./img/loading-GIF.gif">
+    </div>
+    <footer class="footer">
+        <img class="rotate" src="./img/favicon-footer.png" alt="">
+    </footer>
+    
+</body>
+</html>
